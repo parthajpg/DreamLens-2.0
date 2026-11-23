@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import { ArrowRight, BookOpen, ArrowLeft } from 'lucide-react';
 import { DreamMode, Language } from '../types';
 
 interface LandingViewProps {
   onSelectMode: (mode: DreamMode) => void;
   language: Language;
+  onBackToIntro?: () => void;
 }
 
-export const LandingView: React.FC<LandingViewProps> = ({ onSelectMode, language }) => {
+export const LandingView: React.FC<LandingViewProps> = ({ onSelectMode, language, onBackToIntro }) => {
   const isTamil = language === 'TAMIL';
   const isTanglish = language === 'TANGLISH';
 
@@ -47,8 +48,20 @@ export const LandingView: React.FC<LandingViewProps> = ({ onSelectMode, language
     <div className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between overflow-hidden">
       
       {/* 1. HERO HEADER: Bold, Art-Directed Stature */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-16 w-full text-center">
+      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-14 pb-16 w-full text-center">
         
+        {onBackToIntro && (
+          <div className="mb-8 flex justify-center sm:justify-start">
+            <button
+              onClick={onBackToIntro}
+              className="flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-white transition-colors px-3.5 py-1.5 rounded-md bg-white/5 border border-white/10 hover:border-white/25 cursor-pointer backdrop-blur-sm"
+            >
+              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>Horizon Intro</span>
+            </button>
+          </div>
+        )}
+
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif-psych font-bold tracking-tight text-white max-w-5xl mx-auto leading-[1.08] mb-6">
           {isTamil ? (
             <>

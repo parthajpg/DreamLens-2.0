@@ -34,12 +34,19 @@
   - [x] Implemented single ceremonial arrow to seamlessly enter into the functional psychology dream sanctuary.
   - [x] Applied the identical subconscious background (`bg-cover bg-center bg-fixed`) with ink navy contrast overlay to the functional `DreamInputView` for Psychology.
   - [x] Updated application navigation router in `App.tsx` (`LANDING` -> `PSYCHOLOGY_LANDING` -> `INPUT`).
-- [x] Verified frontend production build with zero errors (`tsc && vite build` built in 4.83s).
+- [x] Integrated user-provided fine art `images/main-landing-page.png` (`frontend/public/images/main-landing-page.png`):
+  - [x] Built dedicated full-screen `MainLandingView.tsx` with whole-page covered celestial reflection background imagery.
+  - [x] Positioned `MainLandingView` as the primary grand entrance before the dual-portal exploration page.
+  - [x] Added ceremonial entrance arrow with halo hover dynamics to enter into the dual realm explorer (`LANDING`).
+  - [x] Added subtle direct shortcuts to Psychology Realm and Sacred Mythology Realm.
+  - [x] Added return navigation link in `LandingView.tsx` (`Horizon Intro`).
+  - [x] Updated application navigation router in `App.tsx` (`MAIN_LANDING` -> `LANDING` -> `PSYCHOLOGY_LANDING` / `MYTHOLOGY_LANDING` -> `INPUT`).
+- [x] Verified frontend production build with zero errors (`tsc && vite build` built in 10.85s).
 - [x] Authored comprehensive project `README.md` with architectural pillars, technology stack, and quickstart guide.
-- [x] Staged complete project codebase excluding local credentials and temporary files.
+- [x] Committed and pushed milestone commit (`539ea61`) to GitHub remote `origin/main` (`https://github.com/parthajpg/DreamLens-2.0.git`).
 
 ### Active / Next Actions
-1. Commit all staged files to Git and push to GitHub remote (`https://github.com/parthajpg/DreamLens-2.0.git`).
+1. Commit the new `MainLandingView` and `main-landing-page.png` changes to Git and push to remote.
 2. Verify live runtime experience and user responsiveness across breakpoints.
 3. Wire PostgreSQL pgvector schema when local database is provisioned.
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { DreamMode, Language, InterpretationResponse, JournalEntry } from './types';
 import { Navbar } from './components/Navbar';
+import { MainLandingView } from './components/MainLandingView';
 import { LandingView } from './components/LandingView';
 import { PsychologyLandingView } from './components/PsychologyLandingView';
 import { MythologyLandingView } from './components/MythologyLandingView';
@@ -13,7 +14,7 @@ import { journalStorage } from './services/journalStorage';
 
 export function App() {
   // Navigation & View
-  const [currentView, setCurrentView] = useState<'LANDING' | 'PSYCHOLOGY_LANDING' | 'MYTHOLOGY_LANDING' | 'INPUT' | 'LOADING' | 'INTERPRETATION'>('LANDING');
+  const [currentView, setCurrentView] = useState<'MAIN_LANDING' | 'LANDING' | 'PSYCHOLOGY_LANDING' | 'MYTHOLOGY_LANDING' | 'INPUT' | 'LOADING' | 'INTERPRETATION'>('MAIN_LANDING');
   const [activeMode, setActiveMode] = useState<DreamMode | null>(null);
   const [globalLanguage, setGlobalLanguage] = useState<Language>('ENGLISH');
   const [isJournalOpen, setIsJournalOpen] = useState(false);
@@ -166,9 +167,9 @@ export function App() {
     setIsSavedLocally(true);
   };
 
-  // Reset to Landing
+  // Reset to Main Landing Horizon
   const handleResetToHome = () => {
-    setCurrentView('LANDING');
+    setCurrentView('MAIN_LANDING');
     setActiveMode(null);
   };
 
@@ -217,10 +218,26 @@ export function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
+        {currentView === 'MAIN_LANDING' && (
+          <MainLandingView
+            onEnter={() => setCurrentView('LANDING')}
+            onSelectMode={(mode) => {
+              setActiveMode(mode);
+              if (mode === 'HINDU_MYTHOLOGY') {
+                setCurrentView('MYTHOLOGY_LANDING');
+              } else {
+                setCurrentView('PSYCHOLOGY_LANDING');
+              }
+            }}
+            language={globalLanguage}
+          />
+        )}
+
         {currentView === 'LANDING' && (
           <LandingView
             onSelectMode={handleSelectMode}
             language={globalLanguage}
+            onBackToIntro={() => setCurrentView('MAIN_LANDING')}
           />
         )}
 
