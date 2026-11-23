@@ -17,21 +17,25 @@ export default {
           muted: '#8492a6',
           astral: '#38bdf8',
         },
-        // Layer 2: Psychology Realm (Cool, Cerebral, Nocturnal Surrealism)
+        // Layer 2: Psychology Realm (The Architecture of Memory)
         psychology: {
-          bg: '#060810',
-          surface: '#0c101d',
-          card: '#111728',
-          cardHover: '#161f36',
-          plum: '#1d1730',
-          plumBorder: '#3e3163',
-          stone: '#334155',
-          sage: '#6ee7b7',
-          sageMuted: '#10b981',
-          silver: '#f8fafc',
-          textMuted: '#94a3b8',
-          border: 'rgba(99, 102, 241, 0.25)',
-          glow: 'rgba(99, 102, 241, 0.15)',
+          deepInk: '#273D4C',
+          dustyTeal: '#668F9C',
+          frostBlue: '#C6DCE1',
+          fadedViolet: '#B4A5C8',
+          porcelain: '#E7E4E1',
+          // Architectural mappings
+          bg: '#182631',
+          surface: '#273D4C',
+          surfaceLight: '#E7E4E1',
+          card: '#1F313E',
+          cardHover: '#2A4252',
+          border: 'rgba(198, 220, 225, 0.25)',
+          borderMuted: 'rgba(102, 143, 156, 0.2)',
+          sage: '#C6DCE1', // Frost Blue accent
+          silver: '#E7E4E1', // Porcelain Gray
+          textMuted: '#9AB3BE',
+          glow: 'rgba(102, 143, 156, 0.15)',
         },
         // Layer 3: Sacred Mythology Realm (Warm, Luminous, Manuscript & Temple Gold)
         mythology: {
@@ -60,7 +64,9 @@ export default {
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-        'serif-psych': ['Cormorant Garamond', 'Cinzel', 'Georgia', 'serif'],
+        'serif-psych': ['"Instrument Serif"', 'Cormorant Garamond', 'Georgia', 'serif'],
+        'display-psych': ['"Instrument Serif"', 'Georgia', 'serif'],
+        'sans-psych': ['Manrope', 'Plus Jakarta Sans', 'sans-serif'],
         'serif-myth': ['Mordial', 'Rozha One', 'Cinzel Decorative', 'serif'],
         'body-myth': ['Lora', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
