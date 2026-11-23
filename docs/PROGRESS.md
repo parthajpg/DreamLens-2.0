@@ -50,7 +50,8 @@
   - [x] Updated `Navbar.tsx` for Psychology mode in Deep Ink with Porcelain typography and realm indicator.
   - [x] Preserved Sacred Mythology module, Mordial typography, and shastric functionality 100% untouched.
   - [x] Calibrated Psychology Realm contrast: Eliminated harsh daytime glare by transitioning workspace and reading surfaces into deep subconscious ink (`#121B22` base, `#18252F` cards, `#E7E4E1` porcelain text, `#C6DCE1` frost accents, `#668F9C` dusty teal borders).
-- [x] Verified frontend production build with zero errors (`tsc && vite build` built in 9.93s).
+  - [x] Applied fixed Psychology background imagery (`landingpage_psychology.png`) to functional pages (`DreamInputView` & `InterpretationView`) with deep ink ambient vignette overlays.
+- [x] Verified frontend production build with zero errors (`tsc && vite build` built in 14.26s).
 
 ### Active / Next Actions
 1. Stage and commit Psychology visual redesign to Git and push to GitHub remote (`https://github.com/parthajpg/DreamLens-2.0.git`).

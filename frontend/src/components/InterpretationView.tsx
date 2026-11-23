@@ -47,14 +47,19 @@ export const InterpretationView: React.FC<InterpretationViewProps> = ({
   };
 
   return (
-    <div className={`min-h-[calc(100vh-4.5rem)] py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-700 relative ${
-      isPsych 
-        ? 'bg-[#121B22] text-[#E7E4E1]' 
-        : 'world-mythology-canvas text-slate-100'
-    }`}>
-      {/* Psychology subtle ambient depth */}
+    <div 
+      className={`min-h-[calc(100vh-4.5rem)] py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-700 relative bg-cover bg-center bg-fixed bg-no-repeat ${
+        isPsych 
+          ? 'text-[#E7E4E1]' 
+          : 'world-mythology-canvas text-slate-100'
+      }`}
+      style={isPsych ? {
+        backgroundImage: "url('/images/psychology/landingpage_psychology.png')"
+      } : undefined}
+    >
+      {/* Psychology deep atmospheric overlay to ensure zero glare and comfortable editorial reading */}
       {isPsych && (
-        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_50%_0%,#1A2832_0%,#121B22_100%)]"></div>
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/85 via-[#121B22]/90 to-[#121B22]/98"></div>
       )}
 
       <div className="max-w-5xl mx-auto relative z-10">

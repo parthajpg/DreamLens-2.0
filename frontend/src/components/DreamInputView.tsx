@@ -82,23 +82,25 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
 
   return (
     <div 
-      className={`min-h-[calc(100vh-4.5rem)] py-10 px-4 sm:px-6 lg:px-8 transition-colors duration-700 relative ${
+      className={`min-h-[calc(100vh-4.5rem)] py-10 px-4 sm:px-6 lg:px-8 transition-colors duration-700 relative bg-cover bg-center bg-fixed bg-no-repeat ${
         isPsych
-          ? 'bg-[#121B22] text-[#E7E4E1]'
-          : 'bg-cover bg-center bg-fixed bg-no-repeat text-slate-100'
+          ? 'text-[#E7E4E1]'
+          : 'text-slate-100'
       }`}
-      style={isMyth ? {
-        backgroundImage: "url('/images/mythology/cosmic_lotus_dreamscape.png')"
-      } : undefined}
+      style={{
+        backgroundImage: isPsych 
+          ? "url('/images/psychology/landingpage_psychology.png')" 
+          : "url('/images/mythology/cosmic_lotus_dreamscape.png')"
+      }}
     >
       {/* Mythology Luminous Dark Overlay (Preserved for Hindu Mythology) */}
       {isMyth && (
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/75 via-black/85 to-[#140c07]/95"></div>
       )}
 
-      {/* Psychology Architectural Atmosphere: Deep Ink subtle vignette */}
+      {/* Psychology Deep Ink Overlay: Preserves subconscious artwork while eliminating glare */}
       {isPsych && (
-        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_50%_0%,#1A2832_0%,#121B22_100%)]"></div>
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/80 via-[#121B22]/85 to-[#121B22]/95"></div>
       )}
 
       <div className="max-w-3xl mx-auto relative z-10">
