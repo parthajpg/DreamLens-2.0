@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       isMyth 
         ? 'bg-[#140c07]/90 border-mythology-border' 
         : isPsych 
-          ? 'bg-[#273D4C] border-[#668F9C]/30 text-[#E7E4E1]' 
+          ? 'bg-[#121B22]/95 border-[#668F9C]/20 text-[#E7E4E1]' 
           : 'bg-global-bg/90 border-global-border'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">

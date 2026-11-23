@@ -84,7 +84,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
     <div 
       className={`min-h-[calc(100vh-4.5rem)] py-10 px-4 sm:px-6 lg:px-8 transition-colors duration-700 relative ${
         isPsych
-          ? 'bg-[#EEF3F5] text-[#273D4C]'
+          ? 'bg-[#121B22] text-[#E7E4E1]'
           : 'bg-cover bg-center bg-fixed bg-no-repeat text-slate-100'
       }`}
       style={isMyth ? {
@@ -96,22 +96,22 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/75 via-black/85 to-[#140c07]/95"></div>
       )}
 
-      {/* Psychology Architectural Atmosphere: Soft, light mist canvas with subtle top tone */}
+      {/* Psychology Architectural Atmosphere: Deep Ink subtle vignette */}
       {isPsych && (
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#E7E4E1]/50 via-transparent to-[#EEF3F5]"></div>
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_50%_0%,#1A2832_0%,#121B22_100%)]"></div>
       )}
 
       <div className="max-w-3xl mx-auto relative z-10">
         
         {/* Navigation & Realm Indicator */}
         <div className={`flex items-center justify-between mb-8 pb-4 border-b ${
-          isPsych ? 'border-[#C6DCE1]' : 'border-white/10'
+          isPsych ? 'border-[#668F9C]/25' : 'border-white/10'
         }`}>
           <button
             onClick={onBack}
             className={`flex items-center gap-1.5 text-xs font-medium transition-colors cursor-pointer ${
               isPsych 
-                ? 'font-sans-psych text-[#668F9C] hover:text-[#273D4C]' 
+                ? 'font-sans-psych text-[#C6DCE1]/80 hover:text-white' 
                 : 'font-mono text-slate-400 hover:text-white'
             }`}
           >
@@ -120,22 +120,22 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
           </button>
 
           <div className={`text-xs ${
-            isPsych ? 'font-sans-psych text-[#668F9C]' : 'font-serif text-slate-400'
+            isPsych ? 'font-sans-psych text-[#C6DCE1]/70' : 'font-serif text-slate-400'
           }`}>
             Realm: <span className={`font-semibold ${
-              isPsych ? 'text-[#273D4C]' : 'text-white'
+              isPsych ? 'text-[#E7E4E1]' : 'text-white'
             }`}>{isPsych ? 'Psychology' : 'Sacred Mythology'}</span>
           </div>
         </div>
 
         {/* Header Storytelling */}
         {isPsych ? (
-          // Psychology Realm: Lighter, spacious, natural editorial invitation
+          // Psychology Realm: Deep, introspective invitation without harsh glare
           <div className="mb-10 text-left">
-            <h1 className="text-3xl sm:text-5xl font-serif-psych font-normal text-[#273D4C] tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-5xl font-serif-psych font-normal text-[#E7E4E1] tracking-tight mb-3">
               What stayed with you when you woke?
             </h1>
-            <p className="text-base sm:text-lg font-sans-psych text-[#273D4C]/80 leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-lg font-sans-psych text-[#C6DCE1]/85 leading-relaxed max-w-2xl">
               Describe what you remember. A feeling, a person, a place, or even a single image is enough to begin.
             </p>
           </div>
@@ -166,7 +166,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
         {/* Writing Sanctuary Form */}
         <form onSubmit={handleSubmit} className={`rounded-xl p-6 sm:p-10 transition-all ${
           isPsych 
-            ? 'bg-white/95 border border-[#C6DCE1] shadow-xl shadow-[#273D4C]/5 text-[#273D4C]' 
+            ? 'bg-[#18252F] border border-[#668F9C]/30 shadow-2xl text-[#E7E4E1]' 
             : 'bg-[#180f09]/90 border border-white/10 manuscript-border shadow-2xl backdrop-blur-xl text-slate-100'
         }`}>
           
@@ -175,13 +175,13 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
             <div className="flex items-center justify-between mb-2">
               <label className={`text-xs uppercase tracking-wider ${
                 isPsych 
-                  ? 'font-sans-psych font-semibold text-[#273D4C]' 
+                  ? 'font-sans-psych font-semibold text-[#E7E4E1]' 
                   : 'font-mono text-slate-300'
               }`}>
-                {isPsych ? 'The Dream Narrative' : 'What did you experience in sleep?'} <span className="text-amber-500">*</span>
+                {isPsych ? 'The Dream Narrative' : 'What did you experience in sleep?'} <span className="text-amber-400">*</span>
               </label>
               <span className={`text-[11px] ${
-                isPsych ? 'font-sans-psych text-[#668F9C]' : 'font-mono text-slate-500'
+                isPsych ? 'font-sans-psych text-[#C6DCE1]/60' : 'font-mono text-slate-500'
               }`}>
                 {isPsych ? 'Private & device-local' : 'Raw dream narrative'}
               </span>
@@ -196,12 +196,12 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
               rows={7}
               className={`w-full rounded-lg p-5 text-base sm:text-lg focus:outline-none transition-colors resize-y leading-relaxed ${
                 isPsych 
-                  ? 'bg-[#FAFDFE] border border-[#668F9C]/35 font-serif-psych text-[#273D4C] placeholder:font-sans-psych placeholder:text-[#668F9C]/60 focus:border-[#273D4C] focus:ring-1 focus:ring-[#273D4C]/20 shadow-inner' 
+                  ? 'bg-[#121B22]/90 border border-[#668F9C]/30 font-serif-psych text-[#E7E4E1] placeholder:font-sans-psych placeholder:text-[#668F9C]/50 focus:border-[#C6DCE1] focus:ring-1 focus:ring-[#C6DCE1]/20 shadow-inner' 
                   : 'bg-black/40 border border-mythology-copper/25 font-body-myth text-mythology-parchment placeholder:font-sans placeholder:text-stone-600 focus:border-mythology-copperLight'
               }`}
             />
             {error && (
-              <div className="flex items-center gap-2 text-rose-600 text-xs mt-2.5 font-sans">
+              <div className="flex items-center gap-2 text-rose-400 text-xs mt-2.5 font-sans">
                 <AlertCircle className="w-3.5 h-3.5" />
                 <span>{error}</span>
               </div>
@@ -212,7 +212,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
           <div className="mb-8">
             <label className={`block text-xs uppercase tracking-wider mb-2.5 ${
               isPsych 
-                ? 'font-sans-psych font-semibold text-[#273D4C]' 
+                ? 'font-sans-psych font-semibold text-[#E7E4E1]' 
                 : 'font-mono text-slate-300'
             }`}>
               {isPsych ? 'How did the dream feel?' : 'Predominant Affective / Emotional Tone (Optional)'}
@@ -226,8 +226,8 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
                   className={`text-xs px-3.5 py-2 rounded-md border transition-all cursor-pointer ${
                     isPsych
                       ? emotionalState === pill
-                        ? 'bg-[#273D4C] text-[#E7E4E1] border-[#273D4C] shadow-sm font-medium'
-                        : 'bg-[#F2F6F8] border-[#C6DCE1] text-[#273D4C] hover:bg-[#E7E4E1]'
+                        ? 'bg-[#273D4C] text-white border-[#C6DCE1] shadow-md font-medium'
+                        : 'bg-[#131D24] border-[#668F9C]/25 text-[#C6DCE1] hover:bg-[#1D2B35] hover:text-[#E7E4E1]'
                       : emotionalState === pill
                         ? 'bg-mythology-card text-mythology-goldBright border-mythology-gold'
                         : 'bg-black/30 border-white/10 text-slate-400 hover:text-white hover:border-white/20'
@@ -244,7 +244,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
               placeholder={isPsych ? "Or describe the feeling in your own words..." : "Or enter custom emotional nuance..."}
               className={`w-full rounded-md px-4 py-2.5 text-xs focus:outline-none ${
                 isPsych
-                  ? 'bg-[#F7FAFB] border border-[#C6DCE1] text-[#273D4C] placeholder:text-[#668F9C]/70 focus:border-[#273D4C]'
+                  ? 'bg-[#121B22] border border-[#668F9C]/30 text-[#E7E4E1] placeholder:text-[#668F9C]/50 focus:border-[#C6DCE1]'
                   : 'bg-black/30 border border-white/10 text-white placeholder:text-slate-600 focus:border-white/30'
               }`}
             />
@@ -264,7 +264,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
           <div className="mb-8">
             <label className={`block text-xs uppercase tracking-wider mb-2 ${
               isPsych 
-                ? 'font-sans-psych font-semibold text-[#273D4C]' 
+                ? 'font-sans-psych font-semibold text-[#E7E4E1]' 
                 : 'font-mono text-slate-300'
             }`}>
               {isPsych ? 'Context or recent thoughts (optional)' : 'Additional Personal Context'}
@@ -279,12 +279,12 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
                   : "e.g., Family milestone approaching; felt quiet reverence upon waking."}
                 className={`w-full rounded-md px-4 py-3 text-xs focus:outline-none ${
                   isPsych
-                    ? 'bg-[#F7FAFB] border border-[#C6DCE1] text-[#273D4C] placeholder:text-[#668F9C]/70 focus:border-[#273D4C]'
+                    ? 'bg-[#121B22] border border-[#668F9C]/30 text-[#E7E4E1] placeholder:text-[#668F9C]/50 focus:border-[#C6DCE1]'
                     : 'bg-black/30 border border-white/10 text-white placeholder:text-slate-600 focus:border-white/30'
                 }`}
               />
               <div className="absolute right-3.5 top-3.5">
-                {isMyth ? <Sun className="w-4 h-4 text-mythology-copper" /> : <Moon className="w-4 h-4 text-[#668F9C]" />}
+                {isMyth ? <Sun className="w-4 h-4 text-mythology-copper" /> : <Moon className="w-4 h-4 text-[#C6DCE1]" />}
               </div>
             </div>
           </div>
@@ -292,12 +292,12 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
           {/* Independent Multilingual Selectors */}
           <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 rounded-lg mb-8 border ${
             isPsych
-              ? 'bg-[#F2F6F8] border-[#C6DCE1]'
+              ? 'bg-[#131D24] border-[#668F9C]/20'
               : 'bg-black/40 border-white/10'
           }`}>
             <div>
               <label className={`block text-[11px] mb-1.5 ${
-                isPsych ? 'font-sans-psych font-semibold text-[#273D4C]' : 'font-mono text-slate-400'
+                isPsych ? 'font-sans-psych font-semibold text-[#E7E4E1]' : 'font-mono text-slate-400'
               }`}>
                 Input Language
               </label>
@@ -306,19 +306,19 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
                 onChange={(e) => setInputLanguage(e.target.value as Language)}
                 className={`w-full rounded-md px-3 py-2 text-xs focus:outline-none ${
                   isPsych
-                    ? 'bg-white border border-[#C6DCE1] text-[#273D4C] font-sans-psych'
+                    ? 'bg-[#18252F] border border-[#668F9C]/30 text-[#E7E4E1] font-sans-psych focus:border-[#C6DCE1]'
                     : 'bg-global-surface border border-white/10 text-white'
                 }`}
               >
-                <option value="ENGLISH">English</option>
-                <option value="TAMIL">தமிழ் (Tamil)</option>
-                <option value="TANGLISH">Tanglish (Conversational)</option>
+                <option value="ENGLISH" className="bg-[#18252F]">English</option>
+                <option value="TAMIL" className="bg-[#18252F]">தமிழ் (Tamil)</option>
+                <option value="TANGLISH" className="bg-[#18252F]">Tanglish (Conversational)</option>
               </select>
             </div>
 
             <div>
               <label className={`block text-[11px] mb-1.5 ${
-                isPsych ? 'font-sans-psych font-semibold text-[#273D4C]' : 'font-mono text-slate-400'
+                isPsych ? 'font-sans-psych font-semibold text-[#E7E4E1]' : 'font-mono text-slate-400'
               }`}>
                 Response Language (Independent)
               </label>
@@ -327,13 +327,13 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
                 onChange={(e) => setResponseLanguage(e.target.value as Language)}
                 className={`w-full rounded-md px-3 py-2 text-xs focus:outline-none ${
                   isPsych
-                    ? 'bg-white border border-[#C6DCE1] text-[#273D4C] font-sans-psych'
+                    ? 'bg-[#18252F] border border-[#668F9C]/30 text-[#E7E4E1] font-sans-psych focus:border-[#C6DCE1]'
                     : 'bg-global-surface border border-white/10 text-white'
                 }`}
               >
-                <option value="ENGLISH">English</option>
-                <option value="TAMIL">தமிழ் (Tamil)</option>
-                <option value="TANGLISH">Tanglish (Conversational)</option>
+                <option value="ENGLISH" className="bg-[#18252F]">English</option>
+                <option value="TAMIL" className="bg-[#18252F]">தமிழ் (Tamil)</option>
+                <option value="TANGLISH" className="bg-[#18252F]">Tanglish (Conversational)</option>
               </select>
             </div>
           </div>
@@ -341,7 +341,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
           {/* Submit Action Bar */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
             <span className={`text-xs italic ${
-              isPsych ? 'font-sans-psych text-[#668F9C]' : 'font-serif text-slate-400'
+              isPsych ? 'font-sans-psych text-[#C6DCE1]/70' : 'font-serif text-slate-400'
             }`}>
               {isPsych 
                 ? 'Grounded in neurocognitive memory & emotional processing models' 
@@ -352,7 +352,7 @@ export const DreamInputView: React.FC<DreamInputViewProps> = ({
               type="submit"
               className={`w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-md text-sm font-semibold transition-all duration-300 shadow-xl cursor-pointer ${
                 isPsych
-                  ? 'bg-[#273D4C] hover:bg-[#1E2E3A] text-[#E7E4E1] border border-[#668F9C]/40 shadow-[#273D4C]/20 hover:translate-y-[-1px]'
+                  ? 'bg-[#273D4C] hover:bg-[#324B5C] text-[#E7E4E1] border border-[#C6DCE1]/40 shadow-lg shadow-[#121B22]/60 hover:translate-y-[-1px]'
                   : 'bg-mythology-card hover:bg-[#2d1f14] text-mythology-parchment border border-mythology-copper/40 shadow-myth-sacred'
               }`}
             >
