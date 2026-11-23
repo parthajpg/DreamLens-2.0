@@ -27,3 +27,26 @@
 - **Context:** Reliance on a single AI provider creates vulnerabilities to rate limits, outages, and regional latency spikes.
 - **Decision:** Implement an abstraction layer supporting primary provider Google Gemini (Flash / Pro) with instant fallback to Groq (Llama 3.3 70B Versatile).
 - **Consequences:** High reliability, resilience against provider downtime, sub-second fallback capabilities.
+
+## ADR-005: Visual Identity Overhaul: Psychological Surrealism + Sacred Narrative Design
+- **Date:** 2026-11-23
+- **Status:** Approved
+- **Context:** Initial UI felt too generic, card-heavy, and reminiscent of template-like AI websites. The application needed a distinct, emotionally immersive visual identity that honors the sovereign depth of both neurocognitive psychology and traditional Hindu scriptural oneiromancy.
+- **Decision:** Adopt the "Psychological Surrealism + Sacred Narrative Design" design language.
+  - Establish a 3-layer color hierarchy (Global Petrol, Psychology Ink Navy/Plum/Sage, Mythology Temple Umber/Parchment/Copper).
+  - Implement sovereign typography systems: Cormorant Garamond for Psychology; Rozha One and Lora for Hindu Mythology; Plus Jakarta Sans for global UI.
+  - Introduce bespoke editorial visual assets (surrealist subconscious compositions, sacred celestial yantras, and Prahara cosmic watch indicators).
+  - Shift interpretation views into asymmetric, high-craft editorial reading formats rather than generic AI cards.
+- **Consequences:** Elevates DreamLens into an unforgettable, museum-grade editorial web experience with authentic cultural and scientific gravitas.
+
+## ADR-006: Anti-AI-Slop Editorial Design System Refactoring
+- **Date:** 2026-11-23
+- **Status:** Approved
+- **Context:** The application retained decorative residue typical of AI SaaS templates: pill-shaped badge kickers above headings, generic status indicators with glowing dots, nested rounded-full containers, excessive border-radius (`rounded-3xl` nested inside `rounded-2xl`), and decorative microcopy capsules.
+- **Decision:** Apply Impeccable craft floor and distill directives:
+  1. Eliminate all decorative pill-shaped badges, kickers, and capsules (including promotional badges above hero headlines).
+  2. Transition to editorial typography hierarchy: simple unboxed headers, clean baseline tabs with crisp active border lines, and authentic hairline dividers.
+  3. Replace bulbous radii with architectural geometry: `rounded-xl` for primary portals/sections, `rounded-lg` for cards, and `rounded-md` for interactive controls.
+  4. Redesign emotional tags and metadata as understated text chips and subtle labels rather than glowing capsules.
+  5. Remove all generic SaaS status indicators (e.g. "Grounded RAG retrieval active" green dot pills) in favor of quiet, authentic editorial statements.
+- **Consequences:** Replaces pseudo-luxury template clichés with sophisticated editorial restraint, allowing imagery and typography to lead the experience.

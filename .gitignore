@@ -16,6 +16,8 @@ target/
 .env
 .env.local
 .env.*.local
+*-local.yml
+*-local.properties
 *.pem
 *.key
 
@@ -29,6 +31,9 @@ target/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Scratch and temporary scripts
+scratch/
 
 # Log files
 *.log

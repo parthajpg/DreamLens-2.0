@@ -1,0 +1,47 @@
+[
+  {
+    "chunkId": "domhoff-2003-0001",
+    "sourceTitle": "The Scientific Study of Dreams: Neural Networks, Cognitive Development, and Content Analysis",
+    "author": "G. William Domhoff",
+    "publicationYear": 2003,
+    "chapter": "Chapter 1: The Neurocognitive Approach to Dreams",
+    "chunkIndex": 0,
+    "text": "The neurocognitive theory of dreaming conceptualizes dreaming as a cognitive achievement that depends on the maturation and structural integrity of a specific forebrain neural network. Unlike early psychoanalytic assertions that dreams are disguises for repressed wishes, empirical evidence demonstrates that dreaming is an imaginative process that draws on waking memories, concerns, and cognitive schemas. The neural substrate of dreaming comprises the limbic and paralimbic structures, ventral striatum, and temporo-parieto-occipital junction, whereas the dorsolateral prefrontal cortex is relatively deactivated, explaining the diminished executive control, reality testing, and metacognition during the dream state."
+  },
+  {
+    "chunkId": "domhoff-2003-0002",
+    "sourceTitle": "The Scientific Study of Dreams: Neural Networks, Cognitive Development, and Content Analysis",
+    "author": "G. William Domhoff",
+    "publicationYear": 2003,
+    "chapter": "Chapter 2: The Continuity Hypothesis",
+    "chunkIndex": 1,
+    "text": "The Continuity Hypothesis represents one of the most robust findings in contemporary scientific dream research. It states that the content of dreams reflects the waking thoughts, emotional preoccupations, interpersonal relationships, and psychological concerns of the dreamer. Longitudinal studies using the Hall/Van de Castle coding system reveal striking consistency in an individual's dream themes over decades. There is no empirical support for the idea that dream symbols represent disguised universal meanings or inverted omens; rather, dreams serve as an undisguised, dramatic reflection of what is emotionally salient in the waking person's life."
+  },
+  {
+    "chunkId": "domhoff-2003-0003",
+    "sourceTitle": "The Scientific Study of Dreams: Neural Networks, Cognitive Development, and Content Analysis",
+    "author": "G. William Domhoff",
+    "publicationYear": 2003,
+    "chapter": "Chapter 3: Cognitive Development and Dreaming in Children",
+    "chunkIndex": 2,
+    "text": "Laboratory studies of children's dreams by Foulkes and colleagues demonstrated that dreaming develops gradually along with waking visuospatial skills, narrative abilities, and cognitive schemas. Preschool children report very simple, static dream images with minimal narrative action, active self-representation, or emotional distress. Full, complex, story-like dream narratives with intense emotional and social interactions typically do not appear until ages nine to eleven. This developmental timeline confirms that dreaming is a higher-order cognitive simulation rather than an automatic byproduct of REM sleep neurophysiology."
+  },
+  {
+    "chunkId": "domhoff-2003-0004",
+    "sourceTitle": "The Scientific Study of Dreams: Neural Networks, Cognitive Development, and Content Analysis",
+    "author": "G. William Domhoff",
+    "publicationYear": 2003,
+    "chapter": "Chapter 4: Content Analysis and Emotional Preoccupations",
+    "chunkIndex": 3,
+    "text": "Using standardized content analysis across thousands of dream reports, research shows that dreams are characterized by high frequencies of interpersonal interactions (aggression, friendliness, sexual interactions), familiar characters, and waking concerns. Negative emotions (anxiety, apprehension, sadness, anger) occur more frequently in dream reports than positive emotions. These negative emotional states do not indicate pathology; rather, they reflect the brain's evolutionary and cognitive tendency to simulate challenging social situations, unresolved conflicts, and emotional dilemmas."
+  },
+  {
+    "chunkId": "domhoff-2003-0005",
+    "sourceTitle": "The Scientific Study of Dreams: Neural Networks, Cognitive Development, and Content Analysis",
+    "author": "G. William Domhoff",
+    "publicationYear": 2003,
+    "chapter": "Chapter 5: Dreaming and the Default Mode Network",
+    "chunkIndex": 4,
+    "text": "Recent neuroimaging and cognitive findings link dreaming to the brain's Default Mode Network (DMN), which is active during daydreaming, mind-wandering, mentalizing, and episodic memory retrieval. When sensory input and motor output are blocked during sleep, the DMN generates spontaneous internal simulations that take on the perceptual intensity and narrative immersion of dreaming. Consequently, dream experiences should be analyzed as unconstrained, embodied simulations of personal meaning rather than cryptic puzzles requiring decoding."
+  }
+]
